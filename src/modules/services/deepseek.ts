@@ -172,7 +172,7 @@ export const DeepSeek: TranslateService = {
 
   defaultSecret: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   secretValidator(secret: string): SecretValidateResult {
-    if (secret === DeepSeek.defaultSecret) {  // 检查是否为默认占位符密钥
+    if (secret === DeepSeek.defaultSecret) {  // Check if it is the default placeholder key
       return {
         secret,
         status: false,
